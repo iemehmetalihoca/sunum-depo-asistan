@@ -1,0 +1,69 @@
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#000;overflow:hidden;font-family:Lato,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3,p,ul,ol{margin:0}
+ul{padding-left:1.1em}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center center}
+#stage>section{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;opacity:0;visibility:hidden;transition:opacity .6s ease,visibility 0s linear .6s}
+#stage>section.active{opacity:1;visibility:visible;transition:opacity .6s ease}
+#stage>section>aside{display:none}
+#hud{position:fixed;right:16px;bottom:12px;color:#c4bcaf;font:14px Inter,sans-serif;opacity:0;transition:opacity .3s}
+body:hover #hud{opacity:.8}
+#notes{position:fixed;left:0;right:0;bottom:0;max-height:38vh;overflow:auto;background:rgba(247,239,228,.97);color:#1B1B1B;font:20px/1.5 Lato,sans-serif;padding:20px 28px;border-top:3px solid #F08A00}
+
+/* ================= LESAFFRE TEMASI ================= */
+html,body{background:#2b1a14}
+#stage>section{z-index:0;font-family:Lato,-apple-system,"Segoe UI",sans-serif !important}
+#stage>section *{font-family:inherit}
+/* içerik slaytı: krem zemin, bordo→turuncu çerçeve, sağ üstte desen */
+#stage>section.lf{background:#F7EFE4 !important;color:#1B1B1B}
+#stage>section.lf::after{content:"";position:absolute;inset:0;border:30px solid transparent;border-top-width:32px;border-bottom-width:33px;
+  border-image:linear-gradient(90deg,#7A1F42 0%,#A3433A 25%,#D36216 52%,#EE8318 75%,#FD901B 89%,#FFA042 100%) 1;pointer-events:none;z-index:30}
+#stage>section.lf::before{content:"";position:absolute;left:1519px;top:-369px;width:740px;height:547px;background:url(assets/desen.svg) no-repeat center/contain;opacity:.9;z-index:-1;pointer-events:none}
+/* başlık bloğu: Roma rakamı + kalın mavi başlık + alt başlık */
+.tb{display:flex;flex-direction:row;align-items:flex-start;gap:34px}
+.tb .rn{font-weight:300 !important;font-size:118px !important;line-height:.86 !important;color:#083A91 !important;letter-spacing:-2px;min-width:96px}
+.tb .tt{display:flex;flex-direction:column;gap:6px;padding-top:6px;max-width:1560px}
+.tb .tt h2{font-size:52px !important;font-weight:700 !important;letter-spacing:-.5px !important;line-height:1.1 !important;color:#083A91 !important}
+.tb .tt p{font-size:27px !important;line-height:1.3 !important;color:#083A91 !important;font-weight:400}
+/* alt bilgi: logo + vizon çizgi + sayfa numarası */
+.flogo{position:absolute;left:66px;top:944px;width:192px;height:auto}
+.fline{position:absolute;left:60px;top:985px;width:1682px;height:2px;background:#8A7B60;opacity:.85}
+.pn{position:absolute;right:92px;top:950px;font-size:52px !important;line-height:1 !important;font-weight:400;color:#083A91 !important}
+/* kapak: turuncu panel + rozet + manzara + krem istatistik kartları */
+#stage>section.lf-cover{background:#F7EFE4 !important}
+.cv-panel{position:absolute;left:33px;top:32px;width:920px;height:1016px;background:linear-gradient(90deg,#EE8801 0%,#DD790A 30%,#CB6814 62%,#B8571E 100%)}
+.cv-badge{position:absolute;left:80px;top:-32px;width:335px;height:300px;background:#0A3B93;display:flex;align-items:center;justify-content:center}
+.cv-badge img{width:300px;height:auto}
+.cv-text{position:absolute;left:80px;top:330px;width:780px;display:flex;flex-direction:column;gap:20px;color:#FFFFFF}
+.cv-label{font-size:22px !important;font-weight:700;letter-spacing:4px;line-height:1.5;color:rgba(255,255,255,.82) !important}
+.cv-text h1{font-size:96px !important;font-weight:700 !important;line-height:1.02 !important;letter-spacing:-2px;color:#FFFFFF}
+.cv-text h2{font-size:52px !important;font-weight:300 !important;line-height:1.15;color:#FBE2BF}
+.cv-sub{font-size:28px !important;line-height:1.4 !important;color:#FFFFFF;max-width:700px}
+.cv-wlogo{position:absolute;left:80px;bottom:44px;width:150px;filter:brightness(0) invert(1);opacity:.9}
+.cv-photo{position:absolute;left:954px;top:27px;width:966px;height:1053px;object-fit:cover}
+.cv-stats{position:absolute;left:1010px;top:770px;width:852px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.cv-stats>div{background:rgba(247,239,228,.95);padding:22px 22px 20px;display:flex;flex-direction:column;gap:6px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.cv-stats .v{font-size:56px !important;font-weight:700;line-height:1 !important;letter-spacing:-1px;color:#083A91}
+.cv-stats .l{font-size:22px !important;line-height:1.3 !important;color:#4B5147}
+/* içerik (gündem) */
+.ag-tab{position:absolute;left:0;top:124px;width:162px;height:46px;background:linear-gradient(90deg,#B8571E,#EE8801)}
+.ag-title{position:absolute;left:190px;top:72px;font-size:110px !important;font-weight:300 !important;line-height:1.2 !important;color:#8A7B60 !important;letter-spacing:-1px}
+.ag-sub{position:absolute;left:196px;top:218px;width:1500px;font-size:26px !important;color:#6F6656 !important}
+.ag-sub .cb{color:#083A91;font-weight:700}.ag-sub .co{color:#B35900;font-weight:700}.ag-sub .cg{color:#8A7B60;font-weight:700}
+.ag-list{position:absolute;left:150px;top:290px;width:1620px;display:flex;flex-direction:column;gap:18px}
+.ag-row{display:flex;flex-direction:row;align-items:center;gap:24px;min-height:84px}
+.ag-n{width:110px;font-size:52px !important;font-weight:900;color:#083A91;line-height:1 !important}
+.ag-t{width:780px;display:flex;flex-direction:column;gap:2px}
+.ag-t h3{font-size:36px !important;font-weight:400 !important;color:#083A91;line-height:1.15 !important}
+.ag-t p{font-size:24px !important;color:#6F6656}
+.ag-s{width:170px;font-size:24px !important;font-weight:700;color:#8A7B60}
+.ag-c{flex:1;display:flex;flex-direction:row;justify-content:flex-end;gap:10px}
+.chip{min-width:58px;padding:7px 10px;font-size:24px !important;font-weight:700;text-align:center;border:2px solid transparent;line-height:1.2}
+.chip.b{background:#083A91;color:#FFFFFF}
+.chip.o{background:#FBE2BF;border-color:#F08A00;color:#8A4A00}
+.chip.r{background:#791C41;color:#FFFFFF}
+.chip.g{background:transparent;border-color:#C4BCAF;color:#8A7B60}
+.ag-bg{position:absolute;left:150px;top:870px;width:1620px;display:flex;flex-direction:row;align-items:center;gap:10px}
+.ag-bg>p:first-child{width:250px;font-size:24px !important;font-weight:700;color:#8A7B60}
+.ag-q{flex:1;text-align:right;font-size:22px !important;color:#8A7B60}
+#vision h2{color:#083A91}

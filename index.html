@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Depo Operasyon Asistanı — Ceyhan (Lesaffre teması)</title>
+<!-- Yazı tipi: internet varsa Inter yüklenir, yoksa sistem yazı tipi kullanılır -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap">
+<link rel="stylesheet" href="deck.css">
+</head>
+<body>
+<!--
+  Slaytlar aşağıda sırayla duruyor. Her slayt bir <section>.
+  Metinleri doğrudan buradan düzenleyebilirsin.
+  <aside> içindeki metin konuşmacı notudur (sunumda N tuşu).
+  Canlı animasyonlar embeds/ klasöründe; kodları embeds/js/ içinde.
+-->
+<div id="stage">
+<!-- ===================== SLAYT 1 · cover · Depo Operasyon Asistanı ===================== -->
+<section id="cover" class="lf-cover" data-transition="fade">
+<div class="cv-panel">
+<div class="cv-badge"><img src="assets/lesaffre-rozet.png" alt="Lesaffre — Fermentation Unlimited"></div>
+<div class="cv-text">
+<p class="cv-label">CEYHAN · DEPO DEPARTMANI<br>OPERASYONEL DİJİTALLEŞME</p>
+<h1>Depo Operasyon<br>Asistanı</h1>
+<h2>Yeni bir çalışma biçimi.</h2>
+<p class="cv-sub">Manuel işlerden standart, kontrollü ve kişiye daha az bağımlı depo operasyonuna.</p>
+</div>
+<img class="cv-wlogo" src="assets/lesaffre-yatay.png" alt="">
+</div>
+<img class="cv-photo" src="assets/bag-manzara.jpg" alt="">
+<div class="cv-stats">
+<div><p class="v">2–3 sa</p><p class="l">her gün geri kazanılan zaman</p></div>
+<div><p class="v">≈ 0</p><p class="l">manuel hata ·<br>Poka‑Yoke ポカヨケ</p></div>
+<div><p class="v">120 bin+</p><p class="l">satır kod · 22 modül</p></div>
+</div>
+<aside>Açılış (yaklaşık 30 saniye): Bugün depo departmanı olarak kurduğumuz operasyon asistanını anlatacağım. Bu bir Excel otomasyonu değil; yeni bir çalışma biçimi. Manuel işlerden standart, kontrollü ve kişiye daha az bağımlı bir depo operasyonuna geçiyoruz. Pratikte şöyle çalışıyor: SAP stok ve yükleme planı giriyor, günlük operasyonda kullandığımız bütün dosyalar çıkıyor. Üç rakamla özetleyeyim. Birincisi zaman: her gün yaklaşık 2–3 saat geri kazanıyoruz. İkincisi hata: manuel hata neredeyse sıfır; Japonlar buna Poka-Yoke der, yani hatayı sonradan bulmak yerine sistemin hatanın oluşmasına izin vermemesi. Üçüncüsü emek: bu sistemin arkasında 120 binden fazla satır kod ve 22 modül var; buna rağmen basit bir eğitimle herkes kullanabiliyor. (Sorulursa: yaklaşık 110 bin satır uygulama, 10 bin satır test kodu; 117 otomatik test her sürümde hesapları doğruluyor. Her sürümün ne değiştirdiği 296 ayrı dokümanda yazılı, yani sistem tek bir kişinin hafızasına bağlı değil.) Bir sonraki sayfada bugünkü yolu ve 22 modülün haritasını göstereyim.</aside>
+</section>
+
+<!-- ===================== SLAYT 2 · modules · Bugünkü yol: 22 modül, tek sistem ===================== -->
+<section id="modules" class="lf" data-transition="fade">
+<div class="ag-tab"></div>
+<h2 class="ag-title">İçerik</h2>
+<p class="ag-sub">22 modül, tek sistem · <span class="cb">mavi: bugün göreceğiniz</span> · <span class="co">turuncu: pilot</span> · <span class="cg">gri: arka planda çalışıyor</span></p>
+<div class="ag-list">
+<div class="ag-row"><p class="ag-n">I.</p><div class="ag-t"><h3>Sabah zinciri</h3><p>Maya çıkış · güvence · VPM3</p></div><p class="ag-s">Slayt 3</p><div class="ag-c"><p class="chip b">1</p><p class="chip b">2</p><p class="chip b">3</p><p class="chip b">4</p><p class="chip b">5</p><p class="chip b">22</p></div></div>
+<div class="ag-row"><p class="ag-n">II.</p><div class="ag-t"><h3>Asistanın beyni</h3><p>Ürün master: girdi → beyin → çıktı</p></div><p class="ag-s">Slayt 4–5</p><div class="ag-c"><p class="chip b">10</p></div></div>
+<div class="ag-row"><p class="ag-n">III.</p><div class="ag-t"><h3>Ürünün yolculuğu</h3><p>Maya yaşı · depo girişi · SHD 4 · depo içi · yükleme</p></div><p class="ag-s">Slayt 6–10</p><div class="ag-c"><p class="chip b">9</p><p class="chip b">20</p><p class="chip b">6</p><p class="chip b">14</p><p class="chip b">15</p><p class="chip b">18</p></div></div>
+<div class="ag-row"><p class="ag-n">IV.</p><div class="ag-t"><h3>Pilot ve sıradaki adım</h3><p>Ambalaj &amp; satın alma · insansız sabah</p></div><p class="ag-s">Slayt 11–13</p><div class="ag-c"><p class="chip o">21</p><p class="chip r">RPA</p></div></div>
+<div class="ag-row"><p class="ag-n">V.</p><div class="ag-t"><h3>Misyon ve vizyon</h3><p>Bugün · sıradaki · gelecek</p></div><p class="ag-s">Slayt 14</p><div class="ag-c"></div></div>
+</div>
+<div class="ag-bg"><p>Arka planda çalışan</p><p class="chip g">7</p><p class="chip g">8</p><p class="chip g">11</p><p class="chip g">12</p><p class="chip g">13</p><p class="chip g">16</p><p class="chip g">17</p><p class="chip g">19</p><p class="ag-q">Hepsi aynı ürün master’dan beslenir · 244 sürüm · 117 otomatik test</p></div>
+<img class="flogo" src="assets/lesaffre-yatay.png" alt="Lesaffre"><div class="fline"></div><p class="pn">2</p>
+<aside>Ne göreceğimizi tek sayfada göstereyim. Sistemde 22 modül var; bugün beş başlıkta ilerleyeceğiz. Birincisi sabah zinciri: maya çıkış, güvence kontrolleri ve VPM3 tek akışta. İkincisi bütün bunların arkasındaki beyin: ürün master. Üçüncüsü ürünün yolculuğu: maya sevk yaşı metriği, üretim programından depo girişi, soğuk depo doluluğu ve SHD 4 kararı, depo içi rota ve yükleme planı. Dördüncüsü pilot aşamadaki ambalaj ve satın alma modülü ile sıradaki büyük adım, insansız sabah. Ve son olarak misyon ve vizyon. Mavi kutular bugün canlı göreceğiniz modüller. Turuncu olan ambalaj modülü çalışıyor ama pilot aşamasında; günlük kullanım için biraz daha veri biriktirmemiz gerekiyor. Alttaki gri modüller de çalışıyor ama bugün anlatmayacağım: üretim besleme ve paketleme ara stok, stok ve sevkiyat istisnaları, arşiv, üretim emri tüketim ve fire mutabakatı, ham madde, teslim tesellüm. Hepsinin ortak noktası aynı ürün master'dan beslenmeleri; bir ürünü bir kez doğru tanımladığımızda 22 modülün hepsi aynı doğru bilgiyi kullanıyor. Güvenilirlik için de: sistem 244. sürümde ve 117 otomatik test her sürümde bütün hesapları yeniden doğruluyor.</aside>
+</section>
+
+<!-- ===================== SLAYT 3 · flow · Maya çıkış ve VPM3: tek zincir ===================== -->
+<section id="flow" class="lf" data-transition="fade" style="background:#F7EFE4;color:#1B1B1B;font-family:Lato, -apple-system, 'Segoe UI', sans-serif;padding:96px 128px;display:flex;flex-direction:column;gap:12px">
+<div class="tb"><p class="rn">I.</p><div class="tt"><h2>Maya çıkış ve VPM3: tek zincir</h2><p>SAP stok ve yükleme planı bir kez yüklenir; maya çıkış, kontroller ve VPM3 raporu aynı zincirden çıkar.</p></div></div>
+<iframe class="embed" data-src="embeds/flow.html" title="flow" style="position:absolute;left:128px;top:236px;width:1664px;height:716px;border:0;background:transparent"></iframe>
+<aside>Bir işi eskiden nasıl, şimdi nasıl yaptığımızı göstereyim; bu bizim her sabahki zincirimiz. Üstte eskisi: SAP'den ürünlerin partisini ve kg'ını elle alıyorduk, hesap makinesiyle koli ve palete çeviriyorduk, maya çıkış Excel'ine elle giriyorduk, sonra VPM3 tablosunu da ayrıca elle hazırlıyorduk. Günde 2–3 saat ve her adımda hata riski. Şimdi tek yükleme, tek zincir. Sabah 08:00 SAP stok dosyası ve Logistics'ten gelen yükleme planı yükleniyor. FIFO önce tahditsiz, sonra kalite kontrol, sonra nakil stoğunu kullanıyor; ürün master her ürünün kg, koli, palet karşılığını bildiği için dönüşüm otomatik. Ortada güvence var: yükleme planı başka departmandan geliyor ve orada palet, koli, kg dönüşüm hataları olabiliyor, kontrol noktalarım bunları yakalıyor. Sevk yaşı raf ömrünün yüzde 30'unu aşarsa, planda olmayan bir parti bir sonraki sevkiyatta 7 günü geçecekse, BI ve kuru mayada son kullanma tarihine 3 aydan az kalmışsa uyarı veriyor. Çıktılar: maya çıkış Excel'i, her araca parti dağıtılmış yükleme planı, eksik ürünler, nakildeki yani LLB'den sevk aşamasındaki ürünler, kalite stokta bekleyen ürünlerin partisi ve miktarı, ve KTF formları. Zincirin en önemli halkası şu: maya çıkış oluştuğu an o gün çıkacak her paletin üretim tarihi ve kaç palet çıkacağı belli oluyor, yani metrik netleşiyor. VPM3 raporu da aynı SAP stok dosyasını ve bu maya çıkışı kullanıyor; ayrıca bir şey yüklemiyoruz. Sağdaki 31 Ekim'in gerçek tablosu: 324 ton yaş maya stoğu, 4 araçla 58,4 ton sevkiyat. Tüm 500 gram iç pazar için 45 palet çıkıyor; 40'ı 3 gün ve altı, 5'i 4 günlük. Yalın metrik yüzde 88,9; uygunsuz 5 palet Özmaya 500 gram, sistem partisini ve üretim tarihini de söylüyor. Hata neredeyse sıfır dememin kanıtı: projede 117 otomatik test var, her yeni sürümde hesaplar yeniden doğrulanıyor.</aside>
+<img class="flogo" src="assets/lesaffre-yatay.png" alt="Lesaffre"><div class="fline"></div><p class="pn">3</p>
+</section>
+<!-- ===================== SLAYT 4 · brain1 · Asistanın beyni: Ürün Master ===================== -->
+<section id="brain1" class="lf" data-transition="fade" style="background:#F7EFE4;color:#1B1B1B;font-family:Lato, -apple-system, 'Segoe UI', sans-serif;padding:96px 128px;display:flex;flex-direction:column;gap:12px">
+<div class="tb"><p class="rn">II.</p><div class="tt"><h2>Asistanın beyni: Ürün Master</h2><p>Bir kez tanımlandı → her ürün 13 özelliğe bağlanıyor. Değerler canlı akıyor.</p></div></div>
+<iframe class="embed" data-src="embeds/brain1.html" title="brain1" style="position:absolute;left:128px;top:236px;width:1664px;height:716px;border:0;background:transparent"></iframe>
+<p style="position:absolute;left:290px;bottom:100px;width:1300px;font-size:24px;color:#6F6656">Modül 10 · Ayarlar → Ürün Master</p>
+<aside>Az önce gördüğünüz sabah zincirinin ve birazdan göreceğiniz her şeyin arkasında tek bir beyin var. Burası işin kalbi. Bir ürünler master kurdum: ürün kodu, SAP adı ve ardından ürün türü, raf ömrü, depo yeri, üretim yeri, ürün grubu, maya türü, üretim tipi, çıkış birimi, paket etiketi, birim/paket, paket kg, birim kg ve açıklama (pazar). Ekranda gördüğünüz gibi her ürün kodu bu özelliklere bağlanıyor; ürünler arasında dolaşıyor. Bir kez tanımladım, her raporda aynı doğru bilgi kullanılıyor. Aslında bu, makine öğrenmesinin temeli: düzgün etiketlenmiş veri.</aside>
+<img class="flogo" src="assets/lesaffre-yatay.png" alt="Lesaffre"><div class="fline"></div><p class="pn">4</p>
+</section>
+<!-- ===================== SLAYT 5 · brain2 · Girdi → beyin → çıktı ===================== -->
+<section id="brain2" class="lf" data-transition="fade" style="background:#F7EFE4;color:#1B1B1B;font-family:Lato, -apple-system, 'Segoe UI', sans-serif;padding:96px 128px;display:flex;flex-direction:column;gap:12px">
+<div class="tb"><p class="rn">II.</p><div class="tt"><h2>Girdi → beyin → çıktı</h2><p>İki kaynak beyne akıyor · master tanıyor, dönüştürüyor · dosyalar çıkıyor.</p></div></div>
+<iframe class="embed" data-src="embeds/brain2.html" title="brain2" style="position:absolute;left:128px;top:236px;width:1664px;height:716px;border:0;background:transparent"></iframe>
+<p style="position:absolute;right:128px;top:58px;width:440px;font-size:26px;font-weight:600;color:#B35900;background:#FBE2BF;border:2px solid #F08A00;border-radius:40px;padding:16px 28px;text-align:center">Beyin yaşı: 4 ay · büyüyor</p>
+<p style="position:absolute;left:290px;bottom:100px;width:1300px;font-size:24px;color:#6F6656">Modül 10 · Ayarlar → Ürün Master</p>
+<aside>Şimdi dışarıdan iki kaynak katılıyor: SAP stok ve Logistics'ten gelen yükleme planı. Her satır beyne giriyor; master ürünü tanıyor ve kg, koli, palet dönüşümünü kendisi yapıyor. Ortadaki ekran bunu canlı gösteriyor: örneğin 1 palet = 108 koli = 1.296 kg. Birkaç saniye sonra sağ tarafta çıktılar beliriyor: Maya Çıkış Excel'i, eksik ürünler, nakildeki ürünler, kalite stok, KTF formları ve uyarılar. Etraftaki küçük noktalar projedeki kod modülleri: yalnızca Excel tarafında 98 ayrı motor var. Bu beyin şu an 4 aylık; her hafta yeni bir bağlantı öğreniyor ve büyümeye devam edecek. Şimdi bu beynin beslediği işleri ürünün yolculuğu üzerinden görelim: önce sevk yaşı metriği.</aside>
+<img class="flogo" src="assets/lesaffre-yatay.png" alt="Lesaffre"><div class="fline"></div><p class="pn">5</p>
+</section>
+<!-- ===================== SLAYT 6 · speed · Maya sevk yaşı metriği ===================== -->
+<section id="speed" class="lf" data-transition="fade" style="background:#F7EFE4;color:#1B1B1B;font-family:Lato, -apple-system, 'Segoe UI', sans-serif;padding:96px 128px;display:flex;flex-direction:column;gap:12px">
+<div class="tb"><p class="rn">III.</p><div class="tt"><h2>Maya sevk yaşı metriği</h2><p>KTF’i yükle → günlük · haftalık · aylık · yıllık metrik. Aynı kural her yerde: 0–3 gün uygun.</p></div></div>
+<iframe class="embed" data-src="embeds/speed.html" title="speed" style="position:absolute;left:128px;top:236px;width:1664px;height:716px;border:0;background:transparent"></iframe>
+<p style="position:absolute;right:128px;top:58px;width:420px;font-size:26px;font-weight:600;color:#135975;background:#E1EDF1;border:2px solid #135975;border-radius:40px;padding:16px 28px;text-align:center">1 sn · eskiden ≈ 1 saat</p>
+<p style="position:absolute;left:290px;bottom:100px;width:1300px;font-size:24px;color:#6F6656">Modül 9 · Veri Analizi → Maya sevk yaşı metrikleri</p>
+<aside>Eskiden metrik için KTF'den yaşları elle topluyorduk; yanlış maya yaşı, yanlış toplam gibi hatalar olabiliyordu ve yaklaşık 1 saat sürüyordu. Şimdi Maya sevk yaşı metrikleri bölümüne sadece KTF Excel'ini yüklüyoruz. Ekranda gördüğünüz Ekim ayının gerçek KTF'i: 882 sevkiyat kaydı. Sistem her kaydın yaşını hesaplıyor, yaş grubuna ayırıyor ve KG ağırlıklı yalın metriği çıkarıyor. Kural her yerde aynı: 0–3 gün uygun, 3 günün üstü metrik dışı. Ana göstergemiz Tüm 500 grubu İç Pazar: Ekim'de yüzde 83,9, ortalama sevk yaşı 2,63 gün. Aynı anda beş metrik grubunu birden hesaplıyor ve tek tıkla Excel olarak indiriyor. Haftalık, aylık, yıllık; ne istersek 1 saniyede.</aside>
+<img class="flogo" src="assets/lesaffre-yatay.png" alt="Lesaffre"><div class="fline"></div><p class="pn">6</p>
+</section>
+<!-- ===================== SLAYT 7 · inbound · Depo girişi: her paletin dakikası ===================== -->
+<section id="inbound" class="lf" data-transition="fade" style="background:#F7EFE4;color:#1B1B1B;font-family:Lato, -apple-system, 'Segoe UI', sans-serif;padding:96px 128px;display:flex;flex-direction:column;gap:12px">
+<div class="tb"><p class="rn">III.</p><div class="tt"><h2>Depo girişi: her paletin dakikası</h2><p>Gerçek haftalık üretim programı → motor her paletin depoya giriş dakikasını hesaplıyor.</p></div></div>
+<iframe class="embed" data-src="embeds/inbound.html" title="inbound" style="position:absolute;left:128px;top:236px;width:1664px;height:716px;border:0;background:transparent"></iframe>
+<p style="position:absolute;right:128px;top:58px;width:420px;font-size:26px;font-weight:600;color:#135975;background:#E1EDF1;border:2px solid #135975;border-radius:40px;padding:16px 28px;text-align:center">1 sn · eskiden ≈ 1 saat</p>
+<p style="position:absolute;left:290px;bottom:100px;width:1300px;font-size:24px;color:#6F6656">Modül 20 · Üretim Programı / Depo Giriş Tahmini</p>
+<aside>Eskiden bütün haftayı elle hesaplıyorduk: sabah 8'e kadar 500 gramda 2 makine çalışırsa 28 palet, 1 kg'lık hat 15 palet gibi. Ekranda gördüğünüz, 30 Eylül – 8 Ekim haftasının gerçek üretim programını sistemin motoruna verdiğimdeki çıktı. Soldaki gece 2'yi 3'e bağlayan gece: M1 ve M2 KANBAN çalışıyor, Verpa boşta; 1 kg hattında Almarai var. Motor her paletin depoya giriş dakikasını gerçek makine hızlarıyla hesaplıyor ve sabah 8'e kadar 500 gramdan tam 28 palet, 1 kg'dan 3 palet çıkıyor; yani eskiden elle bulduğumuz rakamı artık saniyede veriyor. Sağda aynı haftanın gün gün depo girişi var. Motor programdaki hataları da yakalıyor: örneğin 4 Ekim'deki KANBAN 30 işi makine hızına sığmıyor, 53 dakika sarkıyor; programda ürün master'da olmayan bir iş varsa onu da işaretliyor. Bir sonraki slaytta bu girişleri sevkiyatla birleştirip depo doluluğunu ve SHD 4 kararını göstereceğim. Eskiden 1 saat, şimdi 1 saniye.</aside>
+<img class="flogo" src="assets/lesaffre-yatay.png" alt="Lesaffre"><div class="fline"></div><p class="pn">7</p>
+</section>
+<!-- ===================== SLAYT 8 · buffer · Soğuk depo doluluğu ve SHD 4 kararı ===================== -->
+<section id="buffer" class="lf" data-transition="fade" style="background:#F7EFE4;color:#1B1B1B;font-family:Lato, -apple-system, 'Segoe UI', sans-serif;padding:96px 128px;display:flex;flex-direction:column;gap:12px">
+<div class="tb"><p class="rn">III.</p><div class="tt"><h2>Soğuk depo doluluğu ve SHD 4 kararı</h2><p>Sabah 08:00 sayımı + aynı haftanın üretim ve sevkiyatı → saat saat dolu yer · SHD 1–3: 225 · SHD 4: +60.</p></div></div>
+<iframe class="embed" data-src="embeds/buffer.html" title="buffer" style="position:absolute;left:128px;top:236px;width:1664px;height:716px;border:0;background:transparent"></iframe>
+<p style="position:absolute;right:128px;top:58px;width:380px;font-size:26px;font-weight:600;color:#F08A00;background:#FBE2BF;border:2px solid #F08A00;border-radius:40px;padding:16px 28px;text-align:center">SHD 4 açılsın mı?</p>
+<p style="position:absolute;left:290px;bottom:100px;width:1300px;font-size:24px;color:#6F6656">Modül 6 · Sabah sayımı   ·   20 · Üretim Programı / Depo Giriş Tahmini   ·   10 · Ayarlar → Depo listesi</p>
+<aside>Depo kapasitelerimiz sistemde tanımlı: SHD 1, 2 ve 3 bizim normal depolarımız, toplam 225 palet; SHD 4 60 paletlik buffer depo. Sabah 08:00 sayımında depo depo kaç palet olduğunu giriyoruz; sistem aynı haftanın üretim programını ve sevkiyatını üstüne koyup saat saat dolu yeri hesaplıyor. Ekrandaki çizgi 3 Ekim 08:00'den itibaren gerçek programın motor çıktısı: hafta boyunca 330 palet giriyor, 430 palet çıkıyor ve ilk gün doluluk sabaha göre 97 palete kadar yükseliyor. Bu yüzden karar sabah sayımına bağlı. Üç durumu gösteriyorum: sabah 120 paletle başlarsak zirve 217, SHD 1–3 yeter, SHD 4 kapalı kalır. 160 paletle başlarsak 4 Ekim gece 01:26'da 225'i aşıyoruz; SHD 4'ü açmamız gerekiyor. 200 paletle başlarsak 3 Ekim 16:12'de SHD 4 gerekiyor ve 4 Ekim 05:59'da SHD 4 de doluyor; ek alan planlamamız gerekiyor. Yani bu program için eşik net: sabah 128 paletin altındaysak normal depo yeter, 129 ile 188 arası SHD 4, 188'in üstü ek alan. Eskiden bunu tahminle yapıyorduk, şimdi saat ve dakikayla görüyoruz. Soldaki kroki soğuk hava depolarımızın gerçek krokisi; doluluk SHD 1'den 3'e, sonra SHD 4'e dağıtılarak gösteriliyor.</aside>
+<img class="flogo" src="assets/lesaffre-yatay.png" alt="Lesaffre"><div class="fline"></div><p class="pn">8</p>
+</section>
+<!-- ===================== SLAYT 9 · depotsim · Depo simülasyonu: paletten TIR’a ===================== -->
+<section id="depotsim" class="lf" data-transition="fade" style="background:#F7EFE4;color:#1B1B1B;font-family:Lato, -apple-system, 'Segoe UI', sans-serif;padding:96px 128px;display:flex;flex-direction:column;gap:12px">
+<div class="tb"><p class="rn">III.</p><div class="tt"><h2>Depo simülasyonu: paletten TIR’a</h2><p>Gerçek kroki ve forklift yol ağı üzerinde en kısa uygun rota · araç tipine göre süre.</p></div></div>
+<iframe class="embed" data-src="embeds/depotsim.html" title="depotsim" style="position:absolute;left:128px;top:236px;width:1664px;height:716px;border:0;background:transparent"></iframe>
+<p style="position:absolute;right:128px;top:58px;width:440px;font-size:26px;font-weight:600;color:#135975;background:#E1EDF1;border:2px solid #135975;border-radius:40px;padding:16px 28px;text-align:center">Gerçek kroki · 4 senaryo</p>
+<p style="position:absolute;left:290px;bottom:100px;width:1300px;font-size:24px;color:#6F6656">Modül 14 · Kroki   ·   15 · Depo Simülasyonu</p>
+<aside>Bu da 15. modül, depo simülasyonu. Soğuk hava depolarımızın gerçek krokisi ve forklift yol ağı sistemde tanımlı: 337 palet yeri, kapılar, koridorlar, rampa ve TIR. Bir palet seçiyorum, örneğin SHD 3'teki F65; sistem TIR'a giden en kısa uygun rotayı buluyor: 58 metre. Dolu paletlerin üstünden geçmiyor, aracın genişliği ile geçiş payını kontrol ediyor. Süreyi araç tipine göre veriyor: paleti alma, sürüş ve bırakma dahil manuel transpalet 70 saniye, elektrikli 58 saniye. SHD 2'deki D56 48 metre, SHD 1'deki B38 37 metre, bekleme alanındaki P14 sadece 14 metre. Bu, yükleme sırasını ve hangi paleti nereye koyacağımızı veriyle planlamamızı sağlıyor; ileride tüm yüklemenin süresini önceden hesaplamanın temeli.</aside>
+<img class="flogo" src="assets/lesaffre-yatay.png" alt="Lesaffre"><div class="fline"></div><p class="pn">9</p>
+</section>
+<!-- ===================== SLAYT 10 · loadplan · Yükleme planı: rota ve kontrol ===================== -->
+<section id="loadplan" class="lf" data-transition="fade" style="background:#F7EFE4;color:#1B1B1B;font-family:Lato, -apple-system, 'Segoe UI', sans-serif;padding:96px 128px;display:flex;flex-direction:column;gap:12px">
+<div class="tb"><p class="rn">III.</p><div class="tt"><h2>Yükleme planı: rota ve kontrol</h2><p>Gerçek gün: 17 Ekim planı · araç, rota ve kontrol · ardından FIFO ile parti dağılımlı Excel.</p></div></div>
+<iframe class="embed" data-src="embeds/loadplan.html" title="loadplan" style="position:absolute;left:128px;top:236px;width:1664px;height:716px;border:0;background:transparent"></iframe>
+<p style="position:absolute;right:128px;top:58px;width:420px;font-size:26px;font-weight:600;color:#791C41;background:#F3E3EA;border:2px solid #791C41;border-radius:40px;padding:16px 28px;text-align:center">Gerçek plan · 17 Ekim</p>
+<p style="position:absolute;left:290px;bottom:100px;width:1300px;font-size:24px;color:#6F6656">Modül 18 · Yükleme Planı Oluştur</p>
+<aside>Bu gerçek bir gün: 17 Ekim Cumartesi yükleme planı. 4 araç, 36 palet, 48,4 ton. Sistem müşteri masterındaki 379 teslimat noktasını gerçek koordinatlarıyla, açılış-kapanış saatleriyle ve TIR girebilir mi bilgisiyle tanıyor. İkinci araç Kadirli'den başlayıp Çorum, Amasya, Samsun ve Ünye'ye 8 teslimat yapıyor; dördüncü araç Gaziantep'ten Trabzon ve Rize'ye gidiyor. Kontrol noktasına dikkat: İzmir'deki bir müşterinin 18 paletlik Özmaya siparişi var ama uygun araçların en büyüğü 14 palet alıyor. Sistem bunu sessizce geçmiyor; kontrol bekleyen listesine alıyor ve kontrollü split öneriyor, birinci araçtaki teslimat da bu 5 parçalı teslimatın bir parçası. Rota motoru internet gerektirmeden gerçek yol mesafeleriyle çalışıyor: önce planlanamayan sipariş kalmasın, sonra araç sayısı, sonra kilometre en aza insin. Ardından FIFO her araca partiyi dağıtıyor ve parti dağılımlı yükleme planı Excel'i hazır oluyor. Peki bu kadar farklı iş tek bir sistemde nasıl birbirine bağlanıyor? Şimdi sistemin beynini göstereyim.</aside>
+<img class="flogo" src="assets/lesaffre-yatay.png" alt="Lesaffre"><div class="fline"></div><p class="pn">10</p>
+</section>
+<!-- ===================== SLAYT 11 · packaging · Ambalaj ve satın alma kararı ===================== -->
+<section id="packaging" class="lf" data-transition="fade" style="background:#F7EFE4;color:#1B1B1B;font-family:Lato, -apple-system, 'Segoe UI', sans-serif;padding:96px 128px;display:flex;flex-direction:column;gap:12px">
+<div class="tb"><p class="rn">IV.</p><div class="tt"><h2>Ambalaj ve satın alma kararı</h2><p>Gerçek veri: SAP ZTR_MD04 (11.10.2026) + karton deposu krokisi · riski günü gününe görür.</p></div></div>
+<iframe class="embed" data-src="embeds/packaging.html" title="packaging" style="position:absolute;left:128px;top:236px;width:1664px;height:716px;border:0;background:transparent"></iframe>
+<p style="position:absolute;right:128px;top:58px;width:440px;font-size:26px;font-weight:600;color:#B35900;background:#FBE2BF;border:2px solid #F08A00;border-radius:40px;padding:16px 28px;text-align:center">Pilot · veri birikiyor</p>
+<p style="position:absolute;left:290px;bottom:100px;width:1300px;font-size:24px;color:#6F6656">Modül 14 · Kroki   ·   21 · Ambalaj İhtiyaç / Satın Alma</p>
+<aside>Başta haritada turuncu gördüğünüz modül bu. Planlarımın bir parçası: modül çalışıyor ama şu an pilot aşamasında; günlük hayatta kullanabilmek için daha fazla veri biriktirmemiz gerekiyor. Yine de neyi hedeflediğimi göstermek istiyorum. Depo sadece maya ile değil, ambalajla da ilgileniyor; hedefim satın almaya karar desteği vermek. Sağdaki grafik SAP'den aldığım 11 Ekim tarihli ZTR_MD04 dosyasının gerçek verisi; malzeme 400013371, baskısız 500 gram selüloz kağıt, üç markanın ortak kağıdı. Stok 7 ton civarında, emniyet stoğu 15 ton. Planlı SAS'lar 13 Ekim'de 1 ton, 30 Ekim'de 9 ton, 16 Kasım'da 15 ton. Sistem gün gün stok artı SAS eksi ihtiyacı hesaplıyor ve 11–29 Ekim arasında emniyet stoğunun altında kaldığımızı, 9–15 Kasım'da yine altına düştüğümüzü gösteriyor; öneri: 30 Ekim SAS'ını öne çekmeyi değerlendirmek. Soldaki kroki karton deposunun onaylı krokisi: gerçek palet koordinatlarıyla alt katta 194, üst katta 153 zemin yeri, iki istifle 694 palet. Aynı stok palete çevrilip ana alanı olan Z-4'e yerleşiyor; 16 Kasım SAS'ından sonra 28 zeminin 26'sı doluyor, yani depo yerini de önceden görüyoruz. Önemli: sistem SAP'ye yazmıyor, öneri veriyor; kararı insan veriyor. Pilot modüllerin ötesinde asıl sıradaki büyük adımım ise şu.</aside>
+<img class="flogo" src="assets/lesaffre-yatay.png" alt="Lesaffre"><div class="fline"></div><p class="pn">11</p>
+</section>
+<!-- ===================== SLAYT 12 · rpa · Sıradaki adım: insansız sabah ===================== -->
+<section id="rpa" class="lf" data-transition="fade" style="display:flex; flex-direction:column; gap:12px; padding:96px 128px; background:#F7EFE4">
+  <div class="tb"><p class="rn">IV.</p><div class="tt"><h2>Sıradaki adım: insansız sabah</h2><p>RPA robotu dosyaları alır, asistanı çalıştırır, sonuçları ilgili kişilere mail atar.</p></div></div>
+  <iframe class="embed" data-src="embeds/rpa.html" title="rpa" style="position:absolute; top:236px; left:128px; width:1664px; height:716px;border:0;background:transparent"></iframe>
+  <p style="position:absolute; top:58px; right:128px; width:360px; padding:16px 28px; font-family:Lato, sans-serif; font-size:26px; font-weight:600; text-align:center; color:#791C41; background:#F3E3EA; border:2px solid #791C41; border-radius:40px">Plan · önce güvence</p>
+  <p style="position:absolute;left:290px;bottom:100px;width:1300px; font-family:Lato, sans-serif; font-size:24px; color:#6F6656">Her sabah: SAP stok + yükleme planı maili → asistan → güvence kapısı → ilgili kişilere mail</p>
+  <aside>Bugün raporları ve günlük evrak işlerini otomasyona döktüm; ama hâlâ birinin dosyaları indirip sisteme yüklemesi gerekiyor. Sıradaki hedefim bazı evrakları tamamen insansız hazırlamak. RPA eğitimi aldım; bu bilgiyle her sabah bir robot SAP'den stok Excel'ini indirecek, Logistics'ten mailla gelen yükleme planını otomatik alacak, bu asistanı çalıştıracak ve sonuçları ilgili kişilere mail atacak: maya çıkış formu sevkiyat ekibine, eksik ürünler ilgili kişilere, kalite stokta bekleyen ürünlerin listesi kalite departmanına. Ortada bir güvence kapısı var: bugün sunduğum kontrol noktalarının hepsi burada çalışıyor. Bu sabah hepsi geçti; saat 07:12'de üç mail gitti, insan dokunmadı ve her adım kayıt altında. Peki ya bir kontrol geçmezse?</aside>
+<img class="flogo" src="assets/lesaffre-yatay.png" alt="Lesaffre"><div class="fline"></div><p class="pn">12</p>
+</section>
+<!-- ===================== SLAYT 13 · rpa2 · Hata varsa durur, insana sorar ===================== -->
+<section id="rpa2" class="lf" data-transition="fade" style="display:flex; flex-direction:column; gap:12px; padding:96px 128px; background:#F7EFE4">
+  <div class="tb"><p class="rn">IV.</p><div class="tt"><h2>Hata varsa durur, insana sorar</h2><p>Aynı akış, başka bir sabah: bir kontrol geçmezse hiçbir mail gitmez.</p></div></div>
+  <iframe class="embed" data-src="embeds/rpa2.html" title="rpa2" style="position:absolute; top:236px; left:128px; width:1664px; height:716px;border:0;background:transparent"></iframe>
+  <p style="position:absolute; top:58px; right:128px; width:360px; padding:16px 28px; font-family:Lato, sans-serif; font-size:26px; font-weight:600; text-align:center; color:#B3261E; background:#F9E1E1; border:2px solid #C8102E; border-radius:40px">Jidoka · önce güvence</p>
+  <p style="position:absolute;left:290px;bottom:100px;width:1300px; font-family:Lato, sans-serif; font-size:24px; color:#6F6656">Devreye alma: önce gölge mod (mailler yalnız bana gelir) · hatasız çalıştığı kanıtlanınca canlıya</p>
+  <aside>Bu kulağa korkutucu gelebilir: ya robot hata yaparsa? Ekrandaki sabah bunu gösteriyor. Siparişte 18 palet var ama araç 14 palet alıyor; güvence kapısı ilk kontrolde duruyor. Hiçbir mail gitmiyor, üç çıktı da bekletiliyor ve onay için bana bildiriliyor. Toyota buna Jidoka der: hata varsa makine durur, insana sorar. Devreye alırken de acele etmeyeceğim: önce gölge modda çalışacak, yani robot her sabah çalışacak ama mailler sadece bana gelecek; ben elle yaptığımla karşılaştıracağım. Hatasız çalıştığı kanıtlanmadan canlıya almayacağım. Her çalışmanın kaydı da tutulacak; kim, ne zaman, hangi dosyayla, sonuç ne.</aside>
+<img class="flogo" src="assets/lesaffre-yatay.png" alt="Lesaffre"><div class="fline"></div><p class="pn">13</p>
+</section>
+<!-- ===================== SLAYT 14 · vision · Herkesin kullandığı tek sistem: hatasız, hızlı, doğru. ===================== -->
+<section id="vision" class="lf" data-transition="fade" style="background:radial-gradient(ellipse at 20% 0%, #F7EFE4 0%, #F7EFE4 60%);color:#1B1B1B;font-family:Lato, -apple-system, 'Segoe UI', sans-serif;padding:120px 128px 160px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:64px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:4px;color:#135975">MİSYON</p>
+<h2 style="font-size:64px;font-weight:700;letter-spacing:-2px;line-height:1.1">Herkesin kullandığı tek sistem: hatasız, hızlı, doğru.</h2>
+<p style="font-size:26px;line-height:1.4;color:#4B5147">Raporlar ve günlük evrak otomatik. Mavi yaka basit bir eğitimle kullanır.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:4px;color:#791C41">VİZYON</p>
+<h2 style="font-size:64px;font-weight:700;letter-spacing:-2px;line-height:1.1;background:linear-gradient(90deg, #083A91 0%, #791C41 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">Kendi kendini yöneten, soruya cevap veren depo.</h2>
+<p style="font-size:26px;line-height:1.4;color:#4B5147">Önce güvence, sonra otomasyon: kontrolden geçmeyen hiçbir adım insansız çalışmaz.</p>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px;border-top:2px solid #083A91;padding:28px 0 0 0">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;color:#135975">BUGÜN · OTOMASYON</p>
+<ul style="font-size:26px;line-height:1.5;color:#1B1B1B">
+<li>Raporlar ve günlük evrak otomatik</li>
+<li>Basit eğitimle herkes kullanır</li>
+</ul>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;border-top:2px solid #791C41;padding:28px 0 0 0">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;color:#791C41">SIRADAKİ · RPA</p>
+<ul style="font-size:26px;line-height:1.5;color:#1B1B1B">
+<li>İnsansız sabah akışı · otomatik mail</li>
+<li>Hata varsa durur, insana sorar</li>
+</ul>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;border-top:2px solid #F08A00;padding:28px 0 0 0">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;color:#B35900">GELECEK · YAPAY ZEKÂ</p>
+<ul style="font-size:26px;line-height:1.5;color:#1B1B1B">
+<li>Soru-cevap: her işe standart prosedür</li>
+<li>Tahmin: sevkiyat · SHD 4 · ambalaj</li>
+</ul>
+</div>
+</div>
+<p style="position:absolute;left:290px;bottom:100px;width:1300px;font-size:24px;color:#6F6656">Ceyhan Fabrikası · Depo Departmanı · Teşekkürler</p>
+<aside>Son olarak nereden nereye gittiğimizi iki cümleyle söyleyeyim. Misyonumuz: depoda herkesin kullandığı tek bir sistem; hatasız, hızlı ve doğru. Bugün raporları ve günlük rutin evrak işlerini otomasyona döktüm ve bunu kendim için değil, mavi yakanın basit bir eğitimle kullanabileceği şekilde tasarladım. Vizyonumuz: kendi kendini yöneten ve soruya cevap veren bir depo. Yol haritası üç adım. Bugün otomasyon var. Sıradaki adım RPA: az önce gösterdiğim insansız sabah akışı; hata varsa durur, insana sorar. Gelecekte iki şey var. Birincisi soru-cevap asistanı: bir arkadaşımız depoda herhangi bir işi nasıl yapacağını sorduğunda, örneğin kalite stoktaki bir partiyi nasıl çıkaracağını, asistan ona standart prosedürü adım adım ve doküman numarasıyla verecek. Böylece herkes aynı işi aynı şekilde yapacak, standartlaşacağız ve yeni gelen arkadaşların eğitimi kısalacak. İkincisi makine öğrenmesiyle tahmin: geçmiş yükleme planlarından hangi gün hangi üründen kaç palet sevkiyat çıkacağını ve son dakika plan değişikliği riskini; üretim programı ve sevkiyattan depo doluluğunu ve SHD 4 ihtiyacını günler önceden; ambalaj tüketiminden de satın alma zamanını tahmin edeceğiz. Bugün kurduğum ürün master bunların temeli; düzgün etiketlenmiş veri, makine öğrenmesinin ilk şartı. Daha önce küçük makine öğrenmesi ve derin öğrenme çalışmalarım oldu. Ve her adımda kuralım aynı: önce güvence, sonra otomasyon. Teşekkür ederim.</aside>
+<img class="flogo" src="assets/lesaffre-yatay.png" alt="Lesaffre"><div class="fline"></div><p class="pn">14</p>
+</section>
+</div>
+<div id="hud"><span id="num"></span></div>
+<div id="notes" hidden><div id="notesText"></div></div>
+<script src="deck.js"></script>
+</body>
+</html>

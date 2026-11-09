@@ -1,0 +1,13 @@
+{
+  "name": "depo-operasyon-asistani-sunum-lesaffre",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Ceyhan Depo Operasyon Asistanı — Genel Müdür sunumu (14 slayt, Lesaffre kurumsal teması)",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
