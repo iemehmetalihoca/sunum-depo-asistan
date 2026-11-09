@@ -2,16 +2,25 @@
 // sadece görünen slaydın animasyonunu çalıştırır (diğerleri durur, performans için).
 const slides = [...document.querySelectorAll('#stage > section')];
 const stage = document.getElementById('stage');
+// Telefon düzeltmesi: 1920 px'lik sahne ekrana sabitlenmiş bir çerçevenin içine alınır.
+// Aksi halde telefon tarayıcısı sayfayı 1920 px'e göre genişletiyor ve slaydın solu ekran dışında kalıyordu.
+const frame = document.createElement('div');
+frame.id = 'frame';
+stage.parentNode.insertBefore(frame, stage);
+frame.appendChild(stage);
 const num = document.getElementById('num');
 const notes = document.getElementById('notes');
 const notesText = document.getElementById('notesText');
 let cur = 0;
 
 function fit() {
-  const s = Math.min(innerWidth / 1920, innerHeight / 1080);
+  const w = frame.clientWidth, h = frame.clientHeight;
+  const s = Math.min(w / 1920, h / 1080);
   stage.style.transform = `translate(-50%, -50%) scale(${s})`;
+  document.body.classList.toggle('portrait', h > w && w < 760);
 }
 addEventListener('resize', fit);
+addEventListener('orientationchange', () => setTimeout(fit, 200));
 fit();
 
 function show(i) {
@@ -59,5 +68,15 @@ addEventListener('message', (e) => {
 });
 // Ekranın sol çeyreğine tıklama geri, geri kalanı ileri
 addEventListener('click', (e) => { if (!notes.contains(e.target)) show(e.clientX < innerWidth / 4 ? cur - 1 : cur + 1); });
+
+// Telefonda parmakla kaydırma: sola kaydır → ileri, sağa kaydır → geri
+let tx = null, ty = null;
+addEventListener('touchstart', (e) => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });
+addEventListener('touchend', (e) => {
+  if (tx === null) return;
+  const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+  tx = null;
+  if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) show(dx < 0 ? cur + 1 : cur - 1);
+}, { passive: true });
 
 show((parseInt(location.hash.slice(1)) || 1) - 1);

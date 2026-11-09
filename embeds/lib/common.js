@@ -19,9 +19,4 @@ function loop(f){requestAnimationFrame(function fr(now){const t=Math.max(0,now-t
 // Sol üstteki ↻ tuşu: animasyonu sayfadan çıkmadan baştan oynatır (beyin ve depo simülasyonu hariç).
 if(!document.body.hasAttribute('data-noreplay')){const b=document.createElement('button');b.id='rp';b.title='Tekrar oynat';b.setAttribute('aria-label','Tekrar oynat');b.textContent='↻';
  b.onclick=e=>{e.stopPropagation();t0=performance.now();parts=[];b.blur();parent.postMessage({deckFocus:1},'*')};document.body.appendChild(b)}
-// Animasyonun içindeyken basılan tuşlar sunuma iletilir (ok tuşları çalışmaya devam eder).
-// postMessage kullanılır: index.html dosyaya çift tıklanarak açıldığında da çalışır.
-addEventListener('keydown',e=>{if(e.key.startsWith('Arrow')||e.key===' ')e.preventDefault();parent.postMessage({deckKey:e.key},'*')});
-// Animasyona tıklanınca klavye odağı sunuma geri verilir.
-addEventListener('pointerdown',()=>{parent.postMessage({deckFocus:1},'*')});
 if(window.ANIM)window.ANIM();
